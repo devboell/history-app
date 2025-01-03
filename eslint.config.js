@@ -14,13 +14,9 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
-    // (Optional) Re-specify which files these rules apply to
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-
     rules: {
-      'no-console': 'warn', // Turn on console.log warnings
-      'no-unused-vars': 'warn', // Show warnings for unused vars
-      // Add any other rules you want
+      'no-console': 'warn',
+      'no-unused-vars': 'warn',
       'react/react-in-jsx-scope': 'off',
     },
   },
