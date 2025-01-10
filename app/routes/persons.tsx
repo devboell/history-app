@@ -29,6 +29,7 @@ export default function Persons({ loaderData }: { loaderData: Person[] }) {
   }
   return (
     <div>
+      <div>otherdiv</div>
       {loaderData.map((person: Person) => (
         <div key={`person-${person.id}`}>{person.name}</div>
       ))}
